@@ -1,0 +1,31 @@
+body {
+  background-color: #800080; /* Purple background */
+  color: #ffff00; /* Yellow font color */
+}
+
+button {
+  background-color: #0000ff; /* Blue background for buttons */
+  color: #ffffff; /* White font color for buttons */
+  border: 2px solid #ffff00; /* Yellow border */
+  margin: 10px;
+  padding: 10px 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e90ff; /* Lighter blue on hover */
+}
+
+.counter {
+  border: 1px solid cornflowerblue;
+  border-radius: 6px;
+  /* display: block; */
+  padding: 7px 32px;
+  background: yellow;
+  color: deeppink;
+  font-size: 18px;
+  font-weight: 500;
+}
