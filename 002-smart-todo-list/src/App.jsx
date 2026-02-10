@@ -30,6 +30,11 @@ function App() {
 
   return (
     <div className="todo-wrapper">
+      <div>
+        <h3>Total todos: {todos.length}</h3>
+        <h3>Done: {todos.filter((t) => t.status === DONE).length}</h3>
+        <h3>Pending: {todos.filter((t) => t.status === TODO).length}</h3>
+      </div>
       <form onSubmit={(e) => handleSubmit(e)} className="todo-form">
         <input
           type="text"
