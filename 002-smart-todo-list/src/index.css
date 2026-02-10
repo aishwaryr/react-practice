@@ -1,0 +1,80 @@
+.todo-wrapper {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-form input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.todo-form button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.todo-form button:hover {
+  background-color: #218c3c;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-list li.completed span:nth-child(2) {
+  text-decoration: line-through;
+}
+
+.todo-list ul li span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.todo-list span:nth-child(1) {
+  width: 20px;
+}
+
+.todo-list span:nth-child(2) {
+  flex-grow: 1;
+}
+
+.todo-list span:nth-child(3) {
+  width: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.todo-list span:nth-child(3):hover {
+  color: red;
+}
